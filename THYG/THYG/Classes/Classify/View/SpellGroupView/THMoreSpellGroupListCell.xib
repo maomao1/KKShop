@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="THMoreSpellGroupListCell">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bimai2" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-lm-AIe">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZWS-lm-AIe" secondAttribute="height" multiplier="1:1" id="zn1-za-Lj6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湖北特产，味道好得很，甘甜可口湖北特产，味道好得很，甘甜可口" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-Xs-66k">
+                        <rect key="frame" x="136" y="8" width="303" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.058823529409999999" green="0.058823529409999999" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="起拼价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haW-2Q-1EY">
+                        <rect key="frame" x="136" y="57.5" width="54" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥58" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rib-oA-IiP">
+                        <rect key="frame" x="190" y="52.5" width="42.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已拼1000人" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-Js-zbe">
+                        <rect key="frame" x="368" y="58" width="71" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRU-oJ-gwU">
+                        <rect key="frame" x="359" y="89" width="80" height="30"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1j4-yY-TcK"/>
+                            <constraint firstAttribute="width" constant="80" id="W5b-zI-Auu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="立即拼">
+                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IM6-Js-zbe" secondAttribute="trailing" constant="10" id="CjD-6A-Zcl"/>
+                <constraint firstItem="hvB-Xs-66k" firstAttribute="leading" secondItem="ZWS-lm-AIe" secondAttribute="trailing" constant="10" id="Cot-7g-yfr"/>
+                <constraint firstItem="ZWS-lm-AIe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DZ6-s1-ryv"/>
+                <constraint firstItem="haW-2Q-1EY" firstAttribute="top" secondItem="hvB-Xs-66k" secondAttribute="bottom" constant="18" id="SdY-tz-ECt"/>
+                <constraint firstItem="haW-2Q-1EY" firstAttribute="leading" secondItem="ZWS-lm-AIe" secondAttribute="trailing" constant="10" id="cTa-pF-725"/>
+                <constraint firstAttribute="bottom" secondItem="ZWS-lm-AIe" secondAttribute="bottom" id="ggS-7h-BOM"/>
+                <constraint firstItem="hvB-Xs-66k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="iex-Zb-DPA"/>
+                <constraint firstItem="rib-oA-IiP" firstAttribute="leading" secondItem="haW-2Q-1EY" secondAttribute="trailing" id="k4R-US-AAO"/>
+                <constraint firstAttribute="trailing" secondItem="hvB-Xs-66k" secondAttribute="trailing" constant="10" id="oRS-xS-FHy"/>
+                <constraint firstAttribute="trailing" secondItem="QRU-oJ-gwU" secondAttribute="trailing" constant="10" id="scW-HW-seC"/>
+                <constraint firstItem="IM6-Js-zbe" firstAttribute="top" secondItem="hvB-Xs-66k" secondAttribute="bottom" constant="18.5" id="tp9-RK-b4p"/>
+                <constraint firstItem="QRU-oJ-gwU" firstAttribute="top" secondItem="IM6-Js-zbe" secondAttribute="bottom" constant="15" id="uRl-JU-4wm"/>
+                <constraint firstItem="ZWS-lm-AIe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uqp-OC-HrN"/>
+                <constraint firstItem="rib-oA-IiP" firstAttribute="top" secondItem="hvB-Xs-66k" secondAttribute="bottom" constant="13" id="v8Y-3k-YgK"/>
+            </constraints>
+            <size key="customSize" width="449" height="126"/>
+            <point key="canvasLocation" x="33.5" y="82"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bimai2" width="77" height="83"/>
+    </resources>
+</document>

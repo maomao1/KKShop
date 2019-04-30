@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="THMineOrderHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-4X-Ay2">
+                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="66.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="待付款" image="daifukuan">
+                            <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2N-8m-rXE">
+                        <rect key="frame" x="64.5" y="0.5" width="65" height="66.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="待付款" image="daishouhuo">
+                            <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijq-Si-efT">
+                        <rect key="frame" x="125.5" y="0.5" width="65" height="66.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="待付款" image="daipingjia">
+                            <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbf-xK-U9k">
+                        <rect key="frame" x="190.5" y="0.5" width="65" height="66.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="待付款" image="tuihuanhuo">
+                            <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPl-dB-P3e">
+                        <rect key="frame" x="255.5" y="0.5" width="64.5" height="66.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="待付款" image="quanbudingdan">
+                            <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nbf-xK-U9k" firstAttribute="leading" secondItem="Ijq-Si-efT" secondAttribute="trailing" id="1gz-cV-xQ3"/>
+                    <constraint firstItem="Ijq-Si-efT" firstAttribute="leading" secondItem="u2N-8m-rXE" secondAttribute="trailing" constant="-4" id="495-ki-tzX"/>
+                    <constraint firstItem="OPl-dB-P3e" firstAttribute="leading" secondItem="Nbf-xK-U9k" secondAttribute="trailing" id="5ts-aw-iOD"/>
+                    <constraint firstItem="Nbf-xK-U9k" firstAttribute="height" secondItem="0nd-4X-Ay2" secondAttribute="height" id="6Ut-J5-ao4"/>
+                    <constraint firstItem="Ijq-Si-efT" firstAttribute="width" secondItem="0nd-4X-Ay2" secondAttribute="width" id="Bvt-gP-gDa"/>
+                    <constraint firstItem="OPl-dB-P3e" firstAttribute="centerY" secondItem="Nbf-xK-U9k" secondAttribute="centerY" id="Czw-yB-Dfs"/>
+                    <constraint firstItem="Nbf-xK-U9k" firstAttribute="width" secondItem="0nd-4X-Ay2" secondAttribute="width" id="IDp-3l-MqM"/>
+                    <constraint firstItem="Nbf-xK-U9k" firstAttribute="centerY" secondItem="Ijq-Si-efT" secondAttribute="centerY" id="IGN-aj-pUL"/>
+                    <constraint firstItem="0nd-4X-Ay2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J23-3A-hJU"/>
+                    <constraint firstAttribute="trailing" secondItem="OPl-dB-P3e" secondAttribute="trailing" id="KxI-Sa-Mop"/>
+                    <constraint firstItem="OPl-dB-P3e" firstAttribute="height" secondItem="0nd-4X-Ay2" secondAttribute="height" id="TGr-yq-7Kc"/>
+                    <constraint firstItem="0nd-4X-Ay2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tza-5P-wjy"/>
+                    <constraint firstItem="OPl-dB-P3e" firstAttribute="width" secondItem="0nd-4X-Ay2" secondAttribute="width" id="Ujg-Xk-HSf"/>
+                    <constraint firstItem="u2N-8m-rXE" firstAttribute="width" secondItem="0nd-4X-Ay2" secondAttribute="width" id="Ux3-Yg-feF"/>
+                    <constraint firstItem="Ijq-Si-efT" firstAttribute="height" secondItem="0nd-4X-Ay2" secondAttribute="height" id="WxL-AM-z8G"/>
+                    <constraint firstItem="u2N-8m-rXE" firstAttribute="centerY" secondItem="0nd-4X-Ay2" secondAttribute="centerY" id="YGr-1k-xXM"/>
+                    <constraint firstItem="Ijq-Si-efT" firstAttribute="centerY" secondItem="u2N-8m-rXE" secondAttribute="centerY" id="aqi-yN-fvc"/>
+                    <constraint firstAttribute="bottom" secondItem="0nd-4X-Ay2" secondAttribute="bottom" id="eVG-3J-GX0"/>
+                    <constraint firstItem="u2N-8m-rXE" firstAttribute="height" secondItem="0nd-4X-Ay2" secondAttribute="height" id="lmU-hM-CYY"/>
+                    <constraint firstItem="u2N-8m-rXE" firstAttribute="leading" secondItem="0nd-4X-Ay2" secondAttribute="trailing" id="odG-QW-SG6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-315" y="77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="daifukuan" width="24" height="25"/>
+        <image name="daipingjia" width="27" height="27"/>
+        <image name="daishouhuo" width="31" height="25"/>
+        <image name="quanbudingdan" width="19" height="25"/>
+        <image name="tuihuanhuo" width="28" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,120 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Bugly (2.5.0)
+  - DZNEmptyDataSet (1.8.1)
+  - HDAlertView (3.0)
+  - IQKeyboardManager (6.0.4)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15)
+  - MJRefresh (3.1.15.3)
+  - MSWeakTimer (1.1.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RTRootNavigationController (0.6.7):
+    - RTRootNavigationController/Core (= 0.6.7)
+  - RTRootNavigationController/Core (0.6.7)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - SVProgressHUD (2.2.5)
+  - UMCCommon (1.5.1)
+  - UMCShare/Core (6.9.3):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.3):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedSina (6.9.3):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.3):
+    - UMCCommon
+    - UMCShare/Core
+  - WechatOpenSDK (1.8.2)
+  - YZDisplayViewController (1.0.6)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Bugly
+  - DZNEmptyDataSet
+  - HDAlertView
+  - IQKeyboardManager
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - MSWeakTimer
+  - ReactiveCocoa (~> 2.5)
+  - RTRootNavigationController
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage
+  - SVProgressHUD (~> 2.2.1)
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedSina
+  - UMCShare/Social/ReducedWeChat
+  - WechatOpenSDK
+  - YZDisplayViewController (~> 1.0.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Bugly
+    - DZNEmptyDataSet
+    - HDAlertView
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - MSWeakTimer
+    - ReactiveCocoa
+    - RTRootNavigationController
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - UMCCommon
+    - UMCShare
+    - WechatOpenSDK
+    - YZDisplayViewController
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HDAlertView: bd71d43b310595ecb48642517d0969fa89276d25
+  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 3f039575db1b135a20699ad298713b26acec1528
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RTRootNavigationController: d6aa6cbb78a3eaecea4f6e4df63f15dd887836b8
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMCCommon: 16b674e9de0616d3a6128c551348a686d869c3c7
+  UMCShare: 023886b10d11119331c9c46d8e8a0c31fe67c23e
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
+  YZDisplayViewController: 621f737a9aa3dfbc95a901e89e5e7c4b2ea6ef79
+
+PODFILE CHECKSUM: 4e33c5278c0e1a4dedb884bf29d6f8ac9e83702a
+
+COCOAPODS: 1.5.3

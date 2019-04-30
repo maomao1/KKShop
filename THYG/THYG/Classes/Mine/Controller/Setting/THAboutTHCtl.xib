@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THAboutTHCtl">
+            <connections>
+                <outlet property="curVersionLabel" destination="S5n-2B-HkV" id="2nx-de-Amk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="543"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-GP-jLe">
+                    <rect key="frame" x="60" y="50" width="196" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="VHf-GP-jLe" secondAttribute="height" multiplier="710:202" id="HLw-fc-7Au"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5n-2B-HkV">
+                    <rect key="frame" x="139" y="156" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-VS-rio">
+                    <rect key="frame" x="15" y="204" width="286" height="161.5"/>
+                    <string key="text">特汇易购商城是一个汇聚中国名优特产的专业交易平台；特汇易购是中国电子商务会微商专委员会会员单位，运用四网合一的互联网技术全方位的为中国特产供应商与消费者提供线上线下快速对接的渠道。以弘扬特产文化，助力地方经济为使命布局全国，覆盖国内众多优质特色产品，将最优质、最具性价比的特色特产与消费者分享。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VHf-GP-jLe" secondAttribute="trailing" constant="60" id="6nE-gD-FZp"/>
+                <constraint firstItem="S5n-2B-HkV" firstAttribute="top" secondItem="VHf-GP-jLe" secondAttribute="bottom" constant="50" id="7m0-GG-vQ9"/>
+                <constraint firstAttribute="trailing" secondItem="MBX-VS-rio" secondAttribute="trailing" constant="15" id="FbK-Cy-B4n"/>
+                <constraint firstItem="VHf-GP-jLe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Obo-oN-NXg"/>
+                <constraint firstItem="S5n-2B-HkV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ff5-Ao-56c"/>
+                <constraint firstItem="VHf-GP-jLe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="kdY-s2-WRt"/>
+                <constraint firstItem="VHf-GP-jLe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="oGd-1T-j94"/>
+                <constraint firstItem="MBX-VS-rio" firstAttribute="top" secondItem="S5n-2B-HkV" secondAttribute="bottom" constant="30" id="sY7-tM-bh1"/>
+                <constraint firstItem="MBX-VS-rio" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="t50-EG-UvU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-140" y="-166.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about" width="710" height="202"/>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THCouponsCtl">
+            <connections>
+                <outlet property="allBtn" destination="keS-Rw-z0i" id="kGT-hx-ft9"/>
+                <outlet property="generalBtn" destination="9VC-nW-b8f" id="HBb-Wg-scV"/>
+                <outlet property="screeningBtn" destination="UJ6-2n-HOx" id="TXf-zu-YjC"/>
+                <outlet property="specifiedBtn" destination="nlp-yN-VCq" id="KMg-7w-bi1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keS-Rw-z0i">
+                    <rect key="frame" x="0.0" y="0.0" width="93" height="40"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZLa-jv-4gX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.94117647058823528" green="0.19215686274509802" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="allBtnClick:" destination="-1" eventType="touchUpInside" id="q5W-aD-MNY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-nW-b8f">
+                    <rect key="frame" x="94" y="0.0" width="92.5" height="40"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="通用券">
+                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.94117647059999998" green="0.19215686269999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="generalBtnClick:" destination="-1" eventType="touchUpInside" id="hhL-fB-02b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlp-yN-VCq">
+                    <rect key="frame" x="187.5" y="0.0" width="92.5" height="40"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="指定券">
+                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.94117647059999998" green="0.19215686269999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="specifiedBtnClick:" destination="-1" eventType="touchUpInside" id="ucc-QV-lFH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJ6-2n-HOx">
+                    <rect key="frame" x="281" y="0.0" width="93" height="40"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="筛选" image="shaixuan">
+                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="shaixuan">
+                        <color key="titleColor" red="0.94117647059999998" green="0.19215686269999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="screeningBtnClick:" destination="-1" eventType="touchUpInside" id="CXT-AV-8gG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nlp-yN-VCq" firstAttribute="leading" secondItem="9VC-nW-b8f" secondAttribute="trailing" constant="1" id="6X5-Ae-vpU"/>
+                <constraint firstItem="nlp-yN-VCq" firstAttribute="height" secondItem="keS-Rw-z0i" secondAttribute="height" id="B9G-M8-Tmg"/>
+                <constraint firstItem="9VC-nW-b8f" firstAttribute="leading" secondItem="keS-Rw-z0i" secondAttribute="trailing" constant="1" id="FBX-Or-mIS"/>
+                <constraint firstItem="UJ6-2n-HOx" firstAttribute="leading" secondItem="nlp-yN-VCq" secondAttribute="trailing" constant="1" id="FKT-XW-EXy"/>
+                <constraint firstItem="nlp-yN-VCq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MTR-v7-eb4"/>
+                <constraint firstItem="keS-Rw-z0i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nba-eR-Sos"/>
+                <constraint firstItem="UJ6-2n-HOx" firstAttribute="leading" secondItem="nlp-yN-VCq" secondAttribute="trailing" constant="1" id="Q18-sb-N19"/>
+                <constraint firstItem="UJ6-2n-HOx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RVN-Bp-UaQ"/>
+                <constraint firstItem="nlp-yN-VCq" firstAttribute="width" secondItem="keS-Rw-z0i" secondAttribute="width" id="SYQ-x3-sTO"/>
+                <constraint firstItem="UJ6-2n-HOx" firstAttribute="height" secondItem="keS-Rw-z0i" secondAttribute="height" id="Xak-sN-RYf"/>
+                <constraint firstItem="nlp-yN-VCq" firstAttribute="leading" secondItem="9VC-nW-b8f" secondAttribute="trailing" constant="1" id="aIn-5h-rIi"/>
+                <constraint firstAttribute="trailing" secondItem="UJ6-2n-HOx" secondAttribute="trailing" constant="1" id="apz-Fy-Gqn"/>
+                <constraint firstItem="9VC-nW-b8f" firstAttribute="height" secondItem="keS-Rw-z0i" secondAttribute="height" id="eJg-cZ-qPy"/>
+                <constraint firstItem="9VC-nW-b8f" firstAttribute="leading" secondItem="keS-Rw-z0i" secondAttribute="trailing" constant="1" id="eOl-l8-dW6"/>
+                <constraint firstItem="keS-Rw-z0i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iJx-os-LDH"/>
+                <constraint firstItem="9VC-nW-b8f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lBs-Ig-m8D"/>
+                <constraint firstItem="9VC-nW-b8f" firstAttribute="width" secondItem="keS-Rw-z0i" secondAttribute="width" id="mPa-k0-Kl3"/>
+                <constraint firstItem="UJ6-2n-HOx" firstAttribute="width" secondItem="keS-Rw-z0i" secondAttribute="width" id="znG-CI-2mh"/>
+            </constraints>
+            <point key="canvasLocation" x="-21" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shaixuan" width="11" height="13"/>
+    </resources>
+</document>

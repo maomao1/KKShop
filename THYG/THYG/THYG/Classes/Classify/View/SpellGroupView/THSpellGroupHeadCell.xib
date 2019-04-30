@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="THSpellGroupHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZC-3p-myh">
+                        <rect key="frame" x="5" y="9" width="101" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="JAQ-hR-CTl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="团购中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLy-CD-M31">
+                        <rect key="frame" x="5" y="25" width="101" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="tTd-y5-73o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.16470588235294117" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PLy-CD-M31" secondAttribute="trailing" constant="5" id="1Hb-LF-z6f"/>
+                <constraint firstItem="PLy-CD-M31" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="8AJ-9b-IgW"/>
+                <constraint firstItem="PLy-CD-M31" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="8" id="FEz-9d-SBA"/>
+                <constraint firstAttribute="trailing" secondItem="9ZC-3p-myh" secondAttribute="trailing" constant="5" id="NyB-sE-Rvx"/>
+                <constraint firstItem="9ZC-3p-myh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="nwt-z9-tMn"/>
+                <constraint firstItem="9ZC-3p-myh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="wvZ-7I-VCq"/>
+            </constraints>
+            <size key="customSize" width="111" height="48"/>
+            <connections>
+                <outlet property="statusLabel" destination="PLy-CD-M31" id="jXs-1q-NeA"/>
+                <outlet property="timeLabel" destination="9ZC-3p-myh" id="WXx-fo-R6I"/>
+            </connections>
+            <point key="canvasLocation" x="-692" y="62"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THMyMessageCtl">
+            <connections>
+                <outlet property="activityRecommendBtn" destination="Vin-B9-uAK" id="9We-49-ZF4"/>
+                <outlet property="customServiceBtn" destination="SrK-zG-3jI" id="NKm-BB-VhI"/>
+                <outlet property="systemNotificationBtn" destination="eOR-s2-sAo" id="R3i-wr-OzW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="453"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AU5-ts-pZF">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrK-zG-3jI">
+                            <rect key="frame" x="0.0" y="10" width="115" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="客服" image="tetubiao">
+                                <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="customServiceBtnClick:" destination="-1" eventType="touchUpInside" id="zqJ-YC-2Zp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOR-s2-sAo">
+                            <rect key="frame" x="115" y="10" width="115" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="服务通知" image="tetubiao">
+                                <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="systemNotificationBtnClick:" destination="-1" eventType="touchUpInside" id="lrF-zf-4yJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vin-B9-uAK">
+                            <rect key="frame" x="230" y="10" width="115" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="活动推荐" image="tetubiao">
+                                <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="activityRecommandBtnClick:" destination="-1" eventType="touchUpInside" id="Dx6-cw-ZH5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="eOR-s2-sAo" firstAttribute="height" secondItem="SrK-zG-3jI" secondAttribute="height" id="3zP-9d-me1"/>
+                        <constraint firstItem="SrK-zG-3jI" firstAttribute="leading" secondItem="AU5-ts-pZF" secondAttribute="leading" id="8jz-V0-ZgH"/>
+                        <constraint firstItem="Vin-B9-uAK" firstAttribute="leading" secondItem="eOR-s2-sAo" secondAttribute="trailing" id="Api-H9-qOo"/>
+                        <constraint firstItem="Vin-B9-uAK" firstAttribute="width" secondItem="SrK-zG-3jI" secondAttribute="width" id="ClJ-AI-e1e"/>
+                        <constraint firstAttribute="bottom" secondItem="Vin-B9-uAK" secondAttribute="bottom" constant="10" id="Foo-Mp-XXp"/>
+                        <constraint firstAttribute="bottom" secondItem="eOR-s2-sAo" secondAttribute="bottom" constant="10" id="Owd-7z-biN"/>
+                        <constraint firstItem="SrK-zG-3jI" firstAttribute="top" secondItem="AU5-ts-pZF" secondAttribute="top" constant="10" id="R20-M0-T7b"/>
+                        <constraint firstItem="eOR-s2-sAo" firstAttribute="top" secondItem="AU5-ts-pZF" secondAttribute="top" constant="10" id="TGi-Au-MyK"/>
+                        <constraint firstItem="eOR-s2-sAo" firstAttribute="leading" secondItem="SrK-zG-3jI" secondAttribute="trailing" id="cMK-K5-wZd"/>
+                        <constraint firstAttribute="height" constant="70" id="dbg-OI-c2a"/>
+                        <constraint firstAttribute="bottom" secondItem="SrK-zG-3jI" secondAttribute="bottom" constant="10" id="e8w-8q-QDu"/>
+                        <constraint firstItem="Vin-B9-uAK" firstAttribute="leading" secondItem="eOR-s2-sAo" secondAttribute="trailing" id="fvm-Ef-qvG"/>
+                        <constraint firstItem="eOR-s2-sAo" firstAttribute="leading" secondItem="SrK-zG-3jI" secondAttribute="trailing" id="g5t-Dm-Azn"/>
+                        <constraint firstItem="Vin-B9-uAK" firstAttribute="height" secondItem="SrK-zG-3jI" secondAttribute="height" id="jic-qV-iOd"/>
+                        <constraint firstItem="eOR-s2-sAo" firstAttribute="width" secondItem="SrK-zG-3jI" secondAttribute="width" id="ryi-l2-9po"/>
+                        <constraint firstItem="Vin-B9-uAK" firstAttribute="top" secondItem="AU5-ts-pZF" secondAttribute="top" constant="10" id="s7p-HT-y9E"/>
+                        <constraint firstAttribute="trailing" secondItem="Vin-B9-uAK" secondAttribute="trailing" id="y4e-vp-1Fi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AU5-ts-pZF" secondAttribute="trailing" id="A8v-i1-sjd"/>
+                <constraint firstItem="AU5-ts-pZF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ee1-4r-60z"/>
+                <constraint firstItem="AU5-ts-pZF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mdv-EE-rKt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-169" y="-197"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tetubiao" width="44" height="44"/>
+    </resources>
+</document>

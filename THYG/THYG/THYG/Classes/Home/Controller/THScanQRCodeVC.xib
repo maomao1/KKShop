@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THScanQRCodeVC">
+            <connections>
+                <outlet property="scanTop" destination="048-1s-A8t" id="pua-8W-8fR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Hb7-BO-E8C"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pick_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-XU-emj">
+                    <rect key="frame" x="67" y="144" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="0Yu-5o-SpR"/>
+                        <constraint firstAttribute="width" constant="240" id="fAC-mC-bXx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(请对准二维码/条形码进行扫描)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-aI-2af">
+                    <rect key="frame" x="86.5" y="408" width="201" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj8-qy-TCN">
+                    <rect key="frame" x="32" y="619" width="28" height="28"/>
+                    <state key="normal" image="tuiguangerweima"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bia-c6-1fQ">
+                    <rect key="frame" x="315" y="619" width="28" height="28"/>
+                    <state key="normal" image="guanbishoudiantong"/>
+                    <connections>
+                        <action selector="changeTorchState:" destination="-1" eventType="touchUpInside" id="99a-WT-dr3"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="zVF-oq-KB4">
+                    <rect key="frame" x="67" y="-96" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="NuK-n3-gkM"/>
+                        <constraint firstAttribute="height" constant="240" id="pPq-xb-ZES"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zVF-oq-KB4" firstAttribute="top" secondItem="Etu-XU-emj" secondAttribute="top" constant="-240" id="048-1s-A8t"/>
+                <constraint firstItem="Etu-XU-emj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="144" id="DCH-gc-kxg"/>
+                <constraint firstItem="3gv-aI-2af" firstAttribute="centerX" secondItem="Etu-XU-emj" secondAttribute="centerX" id="E4I-gm-wSq"/>
+                <constraint firstItem="zVF-oq-KB4" firstAttribute="centerX" secondItem="Etu-XU-emj" secondAttribute="centerX" id="OKd-a6-PPW"/>
+                <constraint firstItem="3gv-aI-2af" firstAttribute="top" secondItem="Etu-XU-emj" secondAttribute="bottom" constant="24" id="TwS-Dr-l65"/>
+                <constraint firstAttribute="bottom" secondItem="bia-c6-1fQ" secondAttribute="bottom" constant="20" id="U8y-Bd-72z"/>
+                <constraint firstItem="Etu-XU-emj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bMG-2Q-nvd"/>
+                <constraint firstAttribute="trailing" secondItem="bia-c6-1fQ" secondAttribute="trailing" constant="32" id="dAN-Ar-RPu"/>
+                <constraint firstItem="uj8-qy-TCN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="fSq-Oi-KY2"/>
+                <constraint firstAttribute="bottom" secondItem="uj8-qy-TCN" secondAttribute="bottom" constant="20" id="xia-kh-IZg"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="163.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guanbishoudiantong" width="28" height="28"/>
+        <image name="pick_bg" width="211" height="211"/>
+        <image name="qrcode_scanline_qrcode" width="218" height="170"/>
+        <image name="tuiguangerweima" width="28" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="THOrderConfirmPaymentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="nvH-Rc-wQE">
+                        <rect key="frame" x="26" y="21" width="28" height="23"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-iL-qHK">
+                        <rect key="frame" x="64" y="24" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p3-vy-p0W">
+                        <rect key="frame" x="256.5" y="0.0" width="63.5" height="63.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8p3-vy-p0W" secondAttribute="height" multiplier="1:1" id="YJg-yY-rV5"/>
+                        </constraints>
+                        <state key="normal" image="s"/>
+                        <state key="selected" image="select"/>
+                        <connections>
+                            <action selector="selectClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sdM-40-t0w"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8p3-vy-p0W" secondAttribute="trailing" id="4Cy-0Z-ctC"/>
+                    <constraint firstItem="nvH-Rc-wQE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="EAE-05-tKl"/>
+                    <constraint firstAttribute="bottom" secondItem="8p3-vy-p0W" secondAttribute="bottom" id="FG3-Yj-1g1"/>
+                    <constraint firstItem="CSo-iL-qHK" firstAttribute="centerY" secondItem="nvH-Rc-wQE" secondAttribute="centerY" id="VIe-Li-kHt"/>
+                    <constraint firstItem="nvH-Rc-wQE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aCJ-5r-Raq"/>
+                    <constraint firstItem="8p3-vy-p0W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bgy-yV-1aE"/>
+                    <constraint firstItem="8p3-vy-p0W" firstAttribute="centerY" secondItem="CSo-iL-qHK" secondAttribute="centerY" id="lTb-xD-bbJ"/>
+                    <constraint firstItem="CSo-iL-qHK" firstAttribute="leading" secondItem="nvH-Rc-wQE" secondAttribute="trailing" constant="10" id="tsG-6R-ebj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImgView" destination="nvH-Rc-wQE" id="4Dr-e4-DSJ"/>
+                <outlet property="selButton" destination="8p3-vy-p0W" id="LvF-yH-vHa"/>
+                <outlet property="titleLabel" destination="CSo-iL-qHK" id="RbC-oY-06j"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bank" width="28" height="23"/>
+        <image name="s" width="20" height="20"/>
+        <image name="select" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THMineApplymentVC">
+            <connections>
+                <outlet property="okButton" destination="qvb-Cf-prY" id="jWS-ee-l3D"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="供应商申请条款:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9J-6p-8TX">
+                    <rect key="frame" x="20" y="30" width="111.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJ2-3f-X0o">
+                    <rect key="frame" x="20" y="63" width="335" height="524"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text">特惠易购尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，特惠易购会按照本隐私权政策的规定使用和披露您的个人信息。但特惠易购将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，特惠易购不会将这些信息对外披露或向第三方提供。特惠易购会不时更新本隐私权政策。 您在同意特惠易购服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于特惠易购服务使用协议不可分割的一部分。 
+
+
+1. 适用范围 
+
+a) 在您注册特惠易购帐号时，您根据特惠易购要求提供的个人注册信息； 
+
+b) 在您使用特惠易购网络服务，或访问特惠易购平台网页时，特惠易购自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据； 
+
+c) 特惠易购通过合法途径从商业伙伴处取得的用户个人数据。 
+
+您了解并同意，以下信息不适用本隐私权政策： 
+
+a) 您在使用特惠易购平台提供的搜索服务时输入的关键字信息； 
+
+b) 特惠易购收集到的您在特惠易购发布的有关信息数据，包括但不限于参与活动、成交信息及评价详情； 
+
+c) 违反法律规定或违反特惠易购规则行为及特惠易购已对您采取的措施。 
+
+
+2. 信息使用 
+
+a) 特惠易购不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和特惠易购（含特惠易购关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。 
+
+b) 特惠易购亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何特惠易购平台用户如从事上述活动，一经发现，特惠易购有权立即终止与该用户的服务协议。 
+
+c) 为服务用户的目的，特惠易购可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与特惠易购合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。 
+
+
+3. 信息披露 
+
+在如下情况下，特惠易购将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息： 
+
+a) 经您事先同意，向第三方披露； 
+
+b) 为提供您所要求的产品和服务，而必须和第三方分享您的个人信息； 
+
+c) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；
+
+d) 如您出现违反中国有关法律、法规或者特惠易购服务协议或相关规则的情况，需要向第三方披露； 
+
+e) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；
+
+f) 在特惠易购平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，特惠易购有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。 
+
+g) 其它特惠易购根据法律、法规或者网站政策认为合适的披露。
+
+ 
+
+4. 信息存储和交换 
+
+特惠易购收集的有关您的信息和资料将保存在特惠易购及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或特惠易购收集信息和资料所在地的境外并在境外被访问、存储和展示。
+
+
+5. Cookie的使用
+
+a) 在您未拒绝接受cookies的情况下，特惠易购会在您的计算机上设定或取用cookies
+
+，以便您能登录或使用依赖于cookies的特惠易购平台服务或功能。特惠易购使用cookies可为您提供更加周到的个性化服务，包括推广服务。  b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的特惠易购网络服务或功能。
+
+c) 通过特惠易购所设cookies所取得的有关信息，将适用本政策。 
+
+
+6. 信息安全 
+
+a) 特惠易购帐号均有安全保护功能，请妥善保管您的用户名及密码信息。特惠易购将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。 
+
+b) 在使用特惠易购网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是特惠易购用户名及密码发生泄露，请您立即联络特惠易购客服，以便特惠易购采取相应措施。
+</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvb-Cf-prY">
+                    <rect key="frame" x="20" y="603" width="335" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Il4-R3-Sp7"/>
+                    </constraints>
+                    <state key="normal" title="同 意">
+                        <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="okClick:" destination="-1" eventType="touchUpInside" id="ZeC-wZ-AW7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O9J-6p-8TX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="7dT-qc-bEp"/>
+                <constraint firstItem="qvb-Cf-prY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="B2a-b7-mGS"/>
+                <constraint firstItem="O9J-6p-8TX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Nlm-Ry-uKY"/>
+                <constraint firstAttribute="trailing" secondItem="qvb-Cf-prY" secondAttribute="trailing" constant="20" id="QtC-uy-dip"/>
+                <constraint firstAttribute="bottom" secondItem="tJ2-3f-X0o" secondAttribute="bottom" constant="80" id="VOO-sb-D7c"/>
+                <constraint firstAttribute="trailing" secondItem="tJ2-3f-X0o" secondAttribute="trailing" constant="20" id="db1-8L-uMg"/>
+                <constraint firstItem="tJ2-3f-X0o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fSU-tE-FoI"/>
+                <constraint firstItem="tJ2-3f-X0o" firstAttribute="top" secondItem="O9J-6p-8TX" secondAttribute="bottom" constant="15" id="koe-Ml-e8f"/>
+                <constraint firstAttribute="bottom" secondItem="qvb-Cf-prY" secondAttribute="bottom" constant="20" id="rDi-wi-gnj"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="61.5"/>
+        </view>
+    </objects>
+</document>

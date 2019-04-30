@@ -1,0 +1,44 @@
+# Uncomment the next line to define a global platform for your project
+use_frameworks!
+platform :ios, '8.0'
+
+target 'THYG' do
+
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'DZNEmptyDataSet'
+pod 'MJRefresh'
+pod 'IQKeyboardManager'
+pod 'SDCycleScrollView', '~> 1.65'
+pod 'RTRootNavigationController'
+pod 'SVProgressHUD', '~> 2.2.1'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'YZDisplayViewController', '~> 1.0.6'
+pod 'WechatOpenSDK'
+pod 'Bugly'
+pod 'MSWeakTimer'
+pod 'HDAlertView'
+# 集成微信(精简版0.2M)
+pod 'UMCShare/Social/ReducedWeChat'
+# 集成QQ/QZone/TIM(精简版0.5M)
+pod 'UMCShare/Social/ReducedQQ'
+# 集成新浪微博(精简版1M)
+pod 'UMCShare/Social/ReducedSina'
+
+#pod 'SIAlertView'
+#pod 'BaiduMapKit'
+#pod 'ZLPhotoBrowser'
+#pod 'WechatOpenSDK'
+#pod 'UMengUShare/Social/ReducedWeChat'
+#pod 'UMengUShare/Social/ReducedSina'
+#pod 'UMengUShare/Social/ReducedQQ'
+#pod 'FMDB'
+#pod 'MLCompatibleAlert', '~> 0.0.1'
+#pod 'QBImagePickerController', '~> 2.5'
+#pod 'AlicloudPush'
+#pod 'OHAttributedLabel'
+
+
+end
